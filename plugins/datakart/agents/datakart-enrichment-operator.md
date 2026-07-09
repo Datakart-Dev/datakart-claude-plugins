@@ -1,33 +1,34 @@
 ---
 name: datakart-enrichment-operator
-description: Use this agent to run a complete DataKart enrichment workflow end-to-end - inspecting a prospecting file or CSV, building the identity mapping, preflighting the job, obtaining spend confirmation, starting the waterfall, polling progress, and delivering the full enriched CSV. Trigger when the user asks to enrich contacts, find work emails or phone numbers, enrich a prospecting file or CSV, or download enriched results.
+description: |
+  Use this agent to run a complete DataKart enrichment workflow end-to-end - inspecting a prospecting file or CSV, building the identity mapping, preflighting the job, obtaining spend confirmation, starting the waterfall, polling progress, and delivering the full enriched CSV. Trigger when the user asks to enrich contacts, find work emails or phone numbers, enrich a prospecting file or CSV, or download enriched results.
 
-<example>
-Context: A prospecting file was just exported and the user wants contact data.
-user: "Now get me their work emails"
-assistant: "I'll use the datakart-enrichment-operator agent to preflight an email waterfall on that prospecting file and show you the cost before anything is spent."
-<commentary>
-Prospecting-file-to-email-waterfall is the core enrichment chain; the operator preflights first and never spends without approval.
-</commentary>
-</example>
+  <example>
+  Context: A prospecting file was just exported and the user wants contact data.
+  user: "Now get me their work emails"
+  assistant: "I'll use the datakart-enrichment-operator agent to preflight an email waterfall on that prospecting file and show you the cost before anything is spent."
+  <commentary>
+  Prospecting-file-to-email-waterfall is the core enrichment chain; the operator preflights first and never spends without approval.
+  </commentary>
+  </example>
 
-<example>
-Context: User pastes or attaches a CSV of contacts.
-user: "Here's my contact list - can you find phone numbers for these people?"
-assistant: "I'll use the datakart-enrichment-operator agent to upload the CSV, map the identity columns, and preflight a phone waterfall for your approval."
-<commentary>
-Uploaded-CSV enrichment goes through bulk_enrichment_upload_csv with explicit mapping and the confirm-spend protocol.
-</commentary>
-</example>
+  <example>
+  Context: User pastes or attaches a CSV of contacts.
+  user: "Here's my contact list - can you find phone numbers for these people?"
+  assistant: "I'll use the datakart-enrichment-operator agent to upload the CSV, map the identity columns, and preflight a phone waterfall for your approval."
+  <commentary>
+  Uploaded-CSV enrichment goes through bulk_enrichment_upload_csv with explicit mapping and the confirm-spend protocol.
+  </commentary>
+  </example>
 
-<example>
-Context: An enrichment job is running from earlier.
-user: "Is the enrichment done? Give me whatever it has so far"
-assistant: "I'll use the datakart-enrichment-operator agent to check job progress and pull the live partial CSV for you."
-<commentary>
-Progress polling and partial/final CSV delivery via bulk_enrichment_download belong to the operator.
-</commentary>
-</example>
+  <example>
+  Context: An enrichment job is running from earlier.
+  user: "Is the enrichment done? Give me whatever it has so far"
+  assistant: "I'll use the datakart-enrichment-operator agent to check job progress and pull the live partial CSV for you."
+  <commentary>
+  Progress polling and partial/final CSV delivery via bulk_enrichment_download belong to the operator.
+  </commentary>
+  </example>
 model: inherit
 color: orange
 ---
