@@ -1,0 +1,38 @@
+{
+  "name": "datakart",
+  "owner": {
+    "name": "DataKart",
+    "email": "nath@datakart.ai",
+    "url": "https://datakart.ai"
+  },
+  "metadata": {
+    "description": "Official DataKart plugins for Claude Code, Claude Cowork, and Claude: prospecting, lead-file export, and email/phone waterfall enrichment.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "datakart",
+      "source": "./plugins/datakart",
+      "description": "Find prospects with natural-language people/company search, export lead files, and run credit-aware email/phone waterfall enrichment through the hosted DataKart MCP connector.",
+      "version": "0.2.0",
+      "author": {
+        "name": "DataKart",
+        "email": "nath@datakart.ai",
+        "url": "https://datakart.ai"
+      },
+      "homepage": "https://datakart.ai",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "datakart",
+        "prospecting",
+        "enrichment",
+        "leads",
+        "sales",
+        "email-finder",
+        "phone-finder",
+        "mcp"
+      ]
+    }
+  ]
+}
