@@ -1,0 +1,13 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "mcp__datakart__bulk_enrichment_start|mcp__datakart__bulk_enrichment_upload_csv|mcp__datakart__bulk_enrichment_from_prospecting_file",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "This DataKart tool call can spend enrichment credits. Approve it only if either (a) confirm_spend and start_immediately are absent/false (preflight-only), or (b) the conversation shows the user explicitly approved the spend after seeing the preflight cost estimate. If confirm_spend=true without visible explicit user approval, deny with the reason 'Show the preflight cost to the user and get explicit spend approval before setting confirm_spend=true.'"
+        }
+      ]
+    }
+  ]
+}
