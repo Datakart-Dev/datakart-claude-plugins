@@ -1,33 +1,34 @@
 ---
 name: datakart-prospecting-operator
-description: Use this agent to run a complete DataKart prospecting workflow end-to-end - starting a people/company search, polling the session, answering follow-up questions, selecting the right search version, exporting it to a file, and delivering the full file to the user. Trigger when the user asks to find prospects, leads, decision makers, companies, or accounts, build a lead list, or export/download prospecting results.
+description: |
+  Use this agent to run a complete DataKart prospecting workflow end-to-end - starting a people/company search, polling the session, answering follow-up questions, selecting the right search version, exporting it to a file, and delivering the full file to the user. Trigger when the user asks to find prospects, leads, decision makers, companies, or accounts, build a lead list, or export/download prospecting results.
 
-<example>
-Context: User wants a lead list built.
-user: "Find me heads of engineering at Series B fintech companies in Germany"
-assistant: "I'll use the datakart-prospecting-operator agent to run this search on DataKart and bring back the results."
-<commentary>
-ICP-based people search is the core prospecting workflow; the operator handles start, polling, and version selection autonomously.
-</commentary>
-</example>
+  <example>
+  Context: User wants a lead list built.
+  user: "Find me heads of engineering at Series B fintech companies in Germany"
+  assistant: "I'll use the datakart-prospecting-operator agent to run this search on DataKart and bring back the results."
+  <commentary>
+  ICP-based people search is the core prospecting workflow; the operator handles start, polling, and version selection autonomously.
+  </commentary>
+  </example>
 
-<example>
-Context: A prospecting session already produced results and the user wants the data.
-user: "Great, pull the full data for that second search into a file for me"
-assistant: "I'll use the datakart-prospecting-operator agent to export that search version and download the complete file for you."
-<commentary>
-Export and full-file delivery (pull_prospecting_results_in_file → download_prospecting_file) is the operator's responsibility, including the never-hand-out-URLs rule.
-</commentary>
-</example>
+  <example>
+  Context: A prospecting session already produced results and the user wants the data.
+  user: "Great, pull the full data for that second search into a file for me"
+  assistant: "I'll use the datakart-prospecting-operator agent to export that search version and download the complete file for you."
+  <commentary>
+  Export and full-file delivery (pull_prospecting_results_in_file → download_prospecting_file) is the operator's responsibility, including the never-hand-out-URLs rule.
+  </commentary>
+  </example>
 
-<example>
-Context: User names specific known people.
-user: "Get me the profiles for these three founders, here are their LinkedIn URLs"
-assistant: "I'll use the datakart-prospecting-operator agent - passing LinkedIn URLs directly is the fastest way to get exact matches."
-<commentary>
-Known-person lookups go through the same prospecting pipeline with the LinkedIn URL shortcut.
-</commentary>
-</example>
+  <example>
+  Context: User names specific known people.
+  user: "Get me the profiles for these three founders, here are their LinkedIn URLs"
+  assistant: "I'll use the datakart-prospecting-operator agent - passing LinkedIn URLs directly is the fastest way to get exact matches."
+  <commentary>
+  Known-person lookups go through the same prospecting pipeline with the LinkedIn URL shortcut.
+  </commentary>
+  </example>
 model: inherit
 color: yellow
 ---
