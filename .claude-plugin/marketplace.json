@@ -1,0 +1,42 @@
+{
+    "name":  "datakart",
+    "owner":  {
+                  "name":  "DataKart",
+                  "email":  "nath@datakart.ai",
+                  "url":  "https://datakart.ai"
+              },
+    "metadata":  {
+                     "description":  "Official DataKart plugin marketplace for Claude Code: AI-native prospecting, lead-file export, and bulk email/phone waterfall enrichment with file delivery.",
+                     "version":  "0.2.0"
+                 },
+    "plugins":  [
+                    {
+                        "name":  "datakart",
+                        "source":  "./plugins/datakart",
+                        "description":  "Find prospects with natural-language people/company search, export lead files, and run AI-native bulk email/phone waterfall enrichment up to 50,000 rows with preflight cost checks and direct file delivery.",
+                        "version":  "0.2.0",
+                        "author":  {
+                                       "name":  "DataKart",
+                                       "email":  "nath@datakart.ai",
+                                       "url":  "https://datakart.ai"
+                                   },
+                        "homepage":  "https://datakart.ai",
+                        "repository":  "https://github.com/Datakart-Dev/datakart-claude-plugins",
+                        "license":  "MIT",
+                        "category":  "productivity",
+                        "keywords":  [
+                                         "datakart",
+                                         "prospecting",
+                                         "enrichment",
+                                         "bulk-enrichment",
+                                         "leads",
+                                         "sales",
+                                         "email-finder",
+                                         "phone-finder",
+                                         "waterfall",
+                                         "csv",
+                                         "mcp"
+                                     ]
+                    }
+                ]
+}

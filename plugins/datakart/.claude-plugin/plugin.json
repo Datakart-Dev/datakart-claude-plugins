@@ -1,0 +1,26 @@
+{
+    "name":  "datakart",
+    "version":  "0.2.0",
+    "description":  "DataKart brings AI-native prospecting and bulk enrichment into Claude Code: natural-language people/company search, lead-file export, and email/phone waterfall enrichment up to 50,000 rows with preflight cost checks, explicit spend confirmation, progress tracking, and direct file delivery.",
+    "author":  {
+                   "name":  "DataKart",
+                   "email":  "nath@datakart.ai",
+                   "url":  "https://datakart.ai"
+               },
+    "homepage":  "https://datakart.ai",
+    "repository":  "https://github.com/Datakart-Dev/datakart-claude-plugins",
+    "license":  "MIT",
+    "keywords":  [
+                     "datakart",
+                     "prospecting",
+                     "enrichment",
+                     "bulk-enrichment",
+                     "leads",
+                     "sales",
+                     "email-finder",
+                     "phone-finder",
+                     "waterfall",
+                     "csv",
+                     "mcp"
+                 ]
+}

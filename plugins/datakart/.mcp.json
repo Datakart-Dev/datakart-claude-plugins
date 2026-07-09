@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "datakart": {
+      "type": "http",
+      "url": "https://mcp.datakart.ai/mcp"
+    }
+  }
+}
