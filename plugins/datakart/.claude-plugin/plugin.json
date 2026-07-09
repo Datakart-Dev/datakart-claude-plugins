@@ -1,0 +1,23 @@
+{
+  "name": "datakart",
+  "version": "0.2.0",
+  "description": "DataKart prospecting and enrichment for Claude: natural-language people/company search, lead-file export, and credit-aware email/phone waterfall enrichment via the hosted DataKart MCP connector.",
+  "author": {
+    "name": "DataKart",
+    "email": "nath@datakart.ai",
+    "url": "https://datakart.ai"
+  },
+  "homepage": "https://datakart.ai",
+  "repository": "https://github.com/Datakart-Dev/datakart-claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "datakart",
+    "prospecting",
+    "enrichment",
+    "leads",
+    "sales",
+    "email-finder",
+    "phone-finder",
+    "mcp"
+  ]
+}
