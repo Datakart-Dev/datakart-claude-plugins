@@ -3,7 +3,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "mcp__plugin_datakart_datakart__bulk_enrichment_start|mcp__plugin_datakart_datakart__bulk_enrichment_upload_csv|mcp__plugin_datakart_datakart__bulk_enrichment_from_prospecting_file|mcp__datakart__bulk_enrichment_start|mcp__datakart__bulk_enrichment_upload_csv|mcp__datakart__bulk_enrichment_from_prospecting_file",
+        "matcher": "^mcp__.*__bulk_enrichment_(start|upload_csv|from_prospecting_file)$",
         "hooks": [
           {
             "type": "prompt",

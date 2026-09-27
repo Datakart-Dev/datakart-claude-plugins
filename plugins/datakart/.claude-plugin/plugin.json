@@ -10,6 +10,7 @@
   "homepage": "https://datakart.ai",
   "repository": "https://github.com/Datakart-Dev/datakart-claude-plugins",
   "license": "MIT",
+  "privacyPolicyUrl": "https://datakart.ai/privacy-policy",
   "keywords": [
     "datakart",
     "prospecting",
