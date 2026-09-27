@@ -1,6 +1,6 @@
 # DataKart Claude Plugins
 
-Official DataKart plugin marketplace for **Claude Code**, **Claude Cowork**, and **Claude** (claude.ai). One plugin, three surfaces: natural-language prospecting, lead-file export, and credit-aware email/phone waterfall enrichment — all through the hosted DataKart MCP connector at `https://mcp.datakart.ai/mcp`
+Official DataKart plugin marketplace for **Claude Code**, **Claude Cowork**, and **Claude** (claude.ai). One plugin, three surfaces: natural-language prospecting, lead-file export, and credit-aware email/phone waterfall enrichment — all through the hosted DataKart MCP connector at `https://mcp.datakart.ai/mcp` .
 
 ## What's inside
 
