@@ -1,6 +1,6 @@
 {
   "name": "datakart",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DataKart prospecting and enrichment for Claude: natural-language people/company search, lead-file export, and credit-aware email/phone waterfall enrichment via the hosted DataKart MCP connector.",
   "author": {
     "name": "DataKart",

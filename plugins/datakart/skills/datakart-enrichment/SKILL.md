@@ -1,11 +1,22 @@
 ---
 name: datakart-enrichment
-description: Use when the user wants to enrich contacts, find work emails or phone numbers, run email/phone waterfall enrichment, enrich a DataKart prospecting file or an uploaded CSV, check enrichment credits, monitor a bulk enrichment job, or download enriched results. Covers enrichment_submit, bulk_enrichment_* tools, credit confirmation, and full-file delivery.
+description: Use when the user wants to enrich contacts, find work emails or phone numbers, run email/phone waterfall enrichment, enrich a DataKart prospecting file or an uploaded CSV, check enrichment credits, monitor a bulk enrichment job, or download enriched results. Covers enrichment_submit, bulk_enrichment_* tools, credit confirmation, and full-file delivery. Also use when the user asks how to set up or connect DataKart, or why DataKart tools are missing.
 ---
 
 # DataKart Enrichment
 
 Run credit-consuming email/phone waterfall enrichment through the DataKart MCP connector. Enrichment is where money is spent: always show preflight cost details and obtain explicit user confirmation before starting a job, poll patiently, and deliver the complete enriched file yourself.
+
+## Before anything else: check that DataKart is connected
+
+This skill needs the DataKart connector's tools (for example `prospecting_start`, `bulk_enrichment_start`, `datakart_workspace`). If your tools load on demand, search for them first.
+
+If no DataKart tools are available, **stop and tell the user how to connect**. Don't guess or improvise with other tools, and don't say the connector is "connected but stale". Installing the plugin doesn't connect the connector; the user has to do it once:
+
+- **Claude (web, desktop, mobile) and Cowork:** open **Customize → Plugins → Datakart → Connectors** and click **Connect** (if it shows **Not added**, add it first, then connect). Sign in to DataKart (or create a free account at https://app.datakart.ai). Then, in the chat, select **+ → Connectors** and make sure **Datakart** is turned on.
+- **Claude Code:** run `/mcp`, select **datakart**, and choose **Authenticate** to sign in.
+
+Once they're connected, call `datakart_workspace` to confirm the connection, then continue with the request.
 
 ## The pipelines at a glance
 

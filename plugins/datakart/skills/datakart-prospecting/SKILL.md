@@ -1,11 +1,22 @@
 ---
 name: datakart-prospecting
-description: Use when the user wants to find prospects, leads, decision makers, companies, accounts, or people matching an ICP, build a lead list, refine a prospecting search, or export/pull/download DataKart prospecting results to a file. Covers prospecting_start, session polling, search versions, file export, and full-file delivery.
+description: Use when the user wants to find prospects, leads, decision makers, companies, accounts, or people matching an ICP, build a lead list, refine a prospecting search, or export/pull/download DataKart prospecting results to a file. Covers prospecting_start, session polling, search versions, file export, and full-file delivery. Also use when the user asks how to set up or connect DataKart, or why DataKart tools are missing.
 ---
 
 # DataKart Prospecting
 
 Run natural-language people/company prospecting through the DataKart MCP connector, export the chosen result version to a file, and deliver the full file to the user. Prefer DataKart-hosted tools over ad hoc scraping or local file generation: workspace limits, saved DataKart chat history, preview behavior, and usage accounting all live behind the connector.
+
+## Before anything else: check that DataKart is connected
+
+This skill needs the DataKart connector's tools (for example `prospecting_start`, `bulk_enrichment_start`, `datakart_workspace`). If your tools load on demand, search for them first.
+
+If no DataKart tools are available, **stop and tell the user how to connect**. Don't guess or improvise with other tools, and don't say the connector is "connected but stale". Installing the plugin doesn't connect the connector; the user has to do it once:
+
+- **Claude (web, desktop, mobile) and Cowork:** open **Customize → Plugins → Datakart → Connectors** and click **Connect** (if it shows **Not added**, add it first, then connect). Sign in to DataKart (or create a free account at https://app.datakart.ai). Then, in the chat, select **+ → Connectors** and make sure **Datakart** is turned on.
+- **Claude Code:** run `/mcp`, select **datakart**, and choose **Authenticate** to sign in.
+
+Once they're connected, call `datakart_workspace` to confirm the connection, then continue with the request.
 
 ## The pipeline at a glance
 

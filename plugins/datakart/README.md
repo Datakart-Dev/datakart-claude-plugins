@@ -2,6 +2,12 @@
 
 DataKart brings B2B prospecting and contact enrichment into Claude Code, Claude Cowork, and Claude. Describe your ideal customer in plain language, and the plugin finds matching people and companies, exports lead files, and runs credit-aware email and phone waterfall enrichment through the hosted DataKart MCP connector.
 
+## Getting started
+
+1. Add the plugin.
+2. **Connect DataKart (required, one time).** In Claude or Cowork, open **Customize → Plugins → Datakart → Connectors** and click **Connect**, then sign in to DataKart or create a free account. In Claude Code, run `/mcp`, select **datakart** and choose **Authenticate**.
+3. In a chat, make sure **Datakart** is turned on under **+ → Connectors** (Claude and Cowork), then ask, for example: "Find heads of sales at US SaaS companies with 50–200 employees."
+
 ## What you can do
 
 - **Find prospects**: describe your ideal customer (role, location, company size, and more) in natural language to search people and companies, refine the search, and compare search versions.
