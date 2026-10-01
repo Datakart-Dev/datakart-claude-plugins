@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "Official DataKart plugins for Claude Code, Claude Cowork, and Claude: prospecting, lead-file export, and email/phone waterfall enrichment.",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   "plugins": [
     {
       "name": "datakart",
       "source": "./plugins/datakart",
       "description": "Find prospects with natural-language people/company search, export lead files, and run credit-aware email/phone waterfall enrichment through the hosted DataKart MCP connector.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "DataKart",
         "email": "nath@datakart.ai",

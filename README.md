@@ -41,7 +41,9 @@ Add this repository as a plugin source in Cowork, or install the `datakart` plug
 
 ### Claude (claude.ai)
 
-The two skill folders are standard Claude skills. Upload `skills/datakart-prospecting/` and `skills/datakart-enrichment/` as skills, and connect the DataKart MCP connector (`https://mcp.datakart.ai/mcp`) as a custom connector in Settings.
+1. Add the **Datakart** plugin from **Customize → Plugins**.
+2. **Connect DataKart (required, one time).** Open **Customize → Plugins → Datakart → Connectors** and click **Connect**, then sign in to DataKart or create a free account.
+3. In a chat, make sure **Datakart** is turned on under **+ → Connectors**, then ask, for example: "Find heads of sales at US SaaS companies with 50–200 employees."
 
 ## The workflow the plugin encodes
 
